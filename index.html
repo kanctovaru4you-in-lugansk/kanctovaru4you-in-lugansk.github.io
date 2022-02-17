@@ -13,6 +13,7 @@
     <div class="header-top">
         <div class="logo"></div>
     </div>
+    <div class="header-bottom-large"></div>
     <div class="header-bottom">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -46,11 +47,20 @@
     </div>
     <style>
     @media (min-width: 240px) and (max-width: 320px){
+        .header-bottom{
+            display: block;
+        }
+        .header-bottom-large{
+            display: none;
+        }
 
     }
     @media (min-width: 1024px) and (max-width: 1950px){
         .header-bottom{
             display: none;
+        }
+        .header-bottom-large{
+            display: block;
         }
     }
         .header-top {

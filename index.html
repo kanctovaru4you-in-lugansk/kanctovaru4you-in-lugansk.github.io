@@ -12,6 +12,7 @@
 <body>
     <div class="header-top">
         <div class="logo"></div>
+        <div class="slogan">Канцелярия у Павла<br>Мы работает только для Вас !!</div>
     </div>
     <div class="header-bottom-large">
         <div>Главная</div><div>Канцелярия</div><div>web2print полиграфия</div><div>Контакты</div><div>О нас</div>
@@ -52,7 +53,11 @@
 			font-family: PonterX; /* Имя шрифта */
 			src: url(PonterX.ttf); /* Путь к файлу со шрифтом */
 		}
-    @media (min-width: 240px) and (max-width: 320px){
+    @font-face {
+        font-family: mrVlaShuVlaShu; /* Имя шрифта */
+        src: url(mrVlaShuVlaShu.otf); /* Путь к файлу со шрифтом */
+    }
+    @media (min-width: 240px) and (max-width:1023px){
         .header-bottom{
             display: block;
         }
@@ -73,25 +78,29 @@
             height: 165px;
             width: 100%;
             border: 1px solid black;
+            background-color: #FF0033;
         }
         .header-top div{
             float: left;
         }
         .header-bottom-large{
             height: 52px;
-            background-color: red;
+            background-color: #FF0033;
+            padding-left: 50px;
         }
         .header-bottom-large div{
             float: left;
-            margin-left: 35px;
-            font-size: larger;
+            margin-left: 40px;
+            font-size: 27px;
             text-align: center;
             height: 50px;
-            color: yellow;
-            font-family: PonterX;
+            color: #CCCC00;
+            font-family: mrVlaShuVlaShu;
             text-transform: uppercase;
             font-weight: bold;
             vertical-align: middle;
+            letter-spacing: 1.5px;
+            -webkit-text-stroke: 
             
         }
 
@@ -101,6 +110,20 @@
             width: 280px;
             background: url(logo.png) 100% 100% no-repeat;
             background-size: cover;
+            
+        }
+        .slogan {
+            width: 400px;
+            font-size: 27px;
+            text-align: center;
+            height: 50px;
+            color: #CCCC00;
+            font-family: PonterX;
+            text-transform: uppercase;
+            font-weight: bold;
+            vertical-align: middle;
+            letter-spacing: 1px;
+            -webkit-text-stroke: 0.4px #900909;
             
         }
         .content {

@@ -13,7 +13,9 @@
     <div class="header-top">
         <div class="logo"></div>
     </div>
-    <div class="header-bottom-large"></div>
+    <div class="header-bottom-large">
+        <div>Главная</div><div>Канцелярия</div><div>web2print полиграфия</div><div>Контакты</div><div>О нас</div>
+    </div>
     <div class="header-bottom">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -46,6 +48,10 @@
 
     </div>
     <style>
+    @font-face {
+			font-family: PonterX; /* Имя шрифта */
+			src: url(PonterX.ttf); /* Путь к файлу со шрифтом */
+		}
     @media (min-width: 240px) and (max-width: 320px){
         .header-bottom{
             display: block;
@@ -71,6 +77,24 @@
         .header-top div{
             float: left;
         }
+        .header-bottom-large{
+            height: 52px;
+            background-color: red;
+        }
+        .header-bottom-large div{
+            float: left;
+            margin-left: 35px;
+            font-size: larger;
+            text-align: center;
+            height: 50px;
+            color: yellow;
+            font-family: PonterX;
+            text-transform: uppercase;
+            font-weight: bold;
+            vertical-align: middle;
+            
+        }
+
         .logo {
             border: 1px solid black;
             height: 160px;
